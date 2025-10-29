@@ -9,6 +9,23 @@ A simple end-to-end Kafka streaming application. This consists of three elements
 This application assumes you have a Kafka endpoint ready. To run Kafka locally using
 Docker, see [this repository](https://github.com/uvasds-systems/learn-kafka).
 
+## Run this Solution
+
+To run this solution, there are three pre-requisites:
+
+1. Start your local Kafka cluster using Docker.
+2. Create/start your Python virtual environment.
+3. Install all Python dependencies.
+
+Next, you will need to run three applications simultaneously. You can either
+
+- Run three terminal windows, each with the same virtual environment activated; OR
+- Run this single command, which executes three scripts together (recommended):
+
+```
+python display.py & python producer.py & python consumer.py
+```
+
 ## Enhancements for Production
 
 The wise student will quickly realize there are numerous issues with running this application

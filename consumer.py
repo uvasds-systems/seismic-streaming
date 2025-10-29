@@ -79,7 +79,7 @@ def main():
                     print(f"✗ Failed to insert record {offset}")
                 
                 consumer.store_offsets(msg)
-                time.sleep(3)
+                time.sleep(10)
 
 if __name__ == "__main__":
     try:
